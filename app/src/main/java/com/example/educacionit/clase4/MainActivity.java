@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 }else{
                     textInputLayout.setError(null);
                     //Toast.makeText(MainActivity.this, "Valor correcto!", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                    Intent intent = new Intent(MainActivity.this, Main2Activity.class);
                     startActivity(intent);
                 }
             }
