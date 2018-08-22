@@ -1,5 +1,6 @@
 package com.example.educacionit.clase4;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -58,7 +59,9 @@ public class Main2Activity extends AppCompatActivity {
                         .setAction("Reintentar", new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                Toast.makeText(Main2Activity.this, "Conexion reestablecida", Toast.LENGTH_SHORT).show();
+                                //Toast.makeText(Main2Activity.this, "Conexion reestablecida", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(Main2Activity.this, Main3Activity.class);
+                                startActivity(intent);
                             }
                         });
                 snackbar.setActionTextColor(Color.RED);
